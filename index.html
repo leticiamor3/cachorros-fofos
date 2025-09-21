@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cachorros Fofinhos — Site Acessível</title>
+  <meta name="description" content="Um site simples e acessível sobre cachorros fofinhos, com galeria e formulário de contato." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar" role="banner" aria-label="Barra superior">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="logo" href="#inicio">Cachorros Fofinhos</a>
+      <button class="btn-contrast" id="toggle-contrast" aria-pressed="false" aria-label="Alternar alto contraste">alto contraste</button>
+      <div class="a11y-controls" aria-label="Controles de fonte">
+        <button id="font-plus" aria-label="Aumentar fonte">A+</button>
+        <button id="font-minus" aria-label="Diminuir fonte">A-</button>
+      </div>
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero" aria-label="Boas-vindas">
+      <div class="hero-inner">
+        <h1>Boas-vindas ao <span>Cachorros Fofinhos</span></h1>
+        <p>Um site exemplo, simples e acessível, feito para você se apaixonar por doguinhos.</p>
+        <a class="cta" href="#galeria">Quero ver fofura!</a>
+      </div>
+      <figure class="hero-figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/White%20cute%20dog.jpg" alt="Cachorro branco deitado no gramado" />
+      </figure>
+    </section>
+
+    <section class="sobre">
+      <h2>O que é este site?</h2>
+      <p>
+        Inspirado em um layout didático de acessibilidade, aqui você encontra uma estrutura enxuta
+        com navegação por âncoras, controles de tamanho de fonte e contraste, além de semântica HTML
+        correta para leitores de tela.
+      </p>
+      <p>
+        Todo o conteúdo visual foi escolhido de repositórios com imagens livres para uso.
+        Veja os créditos no rodapé.
+      </p>
+    </section>
+
+    <section id="galeria" class="galeria" aria-labelledby="titulo-galeria">
+      <h2 id="titulo-galeria">Galeria</h2>
+      <ul class="grid" role="list">
+        <li>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cute%20dog.jpg" alt="Cachorro olhando para a câmera" />
+            <figcaption>Cão simpático</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Puppy.jpg" alt="Filhote de cachorro sentado" />
+            <figcaption>Filhote curioso</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dachshund%20brown%20puppy.jpg" alt="Filhote de dachshund marrom" />
+            <figcaption>Dachshund bebê</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Australian%20Shepherd%20puppies.jpg" alt="Filhotes de pastor-australiano" />
+            <figcaption>Turma de filhotes</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contato" class="contato" aria-label="Entre em contato">
+      <h2>Entre em contato</h2>
+      <form class="form" name="contato" method="post" data-netlify="true">
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" required />
+        </div>
+        <div class="campo">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+        </div>
+        <button class="cta" type="submit">Enviar mensagem</button>
+      </form>
+      <div class="redes">
+        <p>Acesse nossas redes:</p>
+        <ul class="links" role="list">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+          <li><a href="#" aria-label="YouTube">YouTube</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape" role="contentinfo">
+    <p>Desenvolvido por Você. Projeto fictício sem fins comerciais.</p>
+    <p>Imagens via Wikimedia Commons (links e licenças nas páginas de arquivos).</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
