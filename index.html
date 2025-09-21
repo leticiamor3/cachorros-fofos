@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cachorros Fofinhos — Site Acessível</title>
+  <meta name="description" content="Site acessível e simples com tema de cachorros fofinhos: proposta pedagógica, galeria com mais fotos e contato." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar" role="banner" aria-label="Barra superior">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="logo" href="#inicio"><span aria-hidden="true" class="paw">🐾</span> Cachorros Fofinhos</a>
+      <button class="btn-contrast" id="toggle-contrast" aria-pressed="false" aria-label="Alternar alto contraste">alto contraste</button>
+      <div class="a11y-controls" aria-label="Controles de fonte">
+        <button id="font-plus" aria-label="Aumentar fonte">A+</button>
+        <button id="font-minus" aria-label="Diminuir fonte">A-</button>
+      </div>
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero" aria-label="Boas-vindas">
+      <div class="hero-inner">
+        <h1>Boas-vindas ao <span class="title-strong">Cachorros Fofinhos</span></h1>
+<p class="subtitle">🐾 Um cantinho para quem ama doguinhos — fotos, carinho e acessibilidade 🐾</p>
+        <p>Um site exemplo, simples e acessível, feito para você se apaixonar por doguinhos.</p>
+        <a class="cta" href="#galeria">Quero ver fofura!</a>
+      </div>
+      <figure class="hero-figure">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/English%20Golden%20Retriever%20puppy.JPG" alt="Cachorro branco deitado no gramado" />
+      </figure>
+    </section>
+
+    <section class="sobre">
+      <h2>O que é este site?</h2>
+      <p>
+        Este projeto foi inspirado em um layout didático de acessibilidade na web. A proposta é demonstrar uma
+        estrutura enxuta com navegação por âncoras, controles de tamanho de fonte, modo de alto contraste e uso
+        correto de semântica HTML para leitores de tela. Assim, pessoas com necessidades diversas conseguem navegar
+        melhor e com mais conforto.
+      </p>
+      <p>
+        O tema escolhido — <strong>cachorros fofinhos</strong> — nasce do carinho e do amor por animais de estimação.
+        Aqui celebramos a amizade, a lealdade e a alegria que os cães trazem ao nosso dia a dia, com fotos
+        cuidadosamente selecionadas de repositórios de uso livre.
+      </p>
+      <p>
+        Você pode reutilizar este código como base para outros temas, mantendo os cuidados de acessibilidade.
+        Os créditos das imagens estão listados no rodapé e no arquivo de créditos.
+      </p>
+    </section>
+
+    <section id="galeria" class="galeria" aria-labelledby="titulo-galeria">
+      <h2 id="titulo-galeria">Galeria</h2>
+      <p class="muted">Clique em “Ver mais fotos” para carregar mais fofuras.</p>
+      <ul class="grid" role="list">
+        <!-- Primeiras 6 imagens visíveis -->
+        <li>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cute%20dog.jpg" alt="Cachorro olhando para a câmera" />
+            <figcaption>Cão simpático</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <!-- Substituição do 'filhote curioso' por um filhote real -->
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Golden%20Retriever%20puppy%202010.jpg" alt="Filhote de Golden Retriever em pé na grama" />
+            <figcaption>Filhote curioso</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dachshund%20brown%20puppy.jpg" alt="Filhote de dachshund marrom" />
+            <figcaption>Dachshund bebê</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Australian%20Shepherd%20puppies.jpg" alt="Filhotes de pastor-australiano" />
+            <figcaption>Turma de filhotes</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Beagle%20puppy.jpg" alt="Filhote de beagle posando" />
+            <figcaption>Beagle bebê</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pomeranian%20puppy.jpg" alt="Filhote de spitz alemão (Pomeranian) preto" />
+            <figcaption>Pomeranian pretinho</figcaption>
+          </figure>
+        </li>
+      </ul>
+
+      <!-- Galeria expandida escondida até clicar -->
+      <div id="mais-fotos" hidden>
+        <ul class="grid" role="list">
+          <li>
+            <figure>
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Golden%20Retriever%20puppy%20standing.jpg" alt="Golden Retriever filhote em pé" />
+              <figcaption>Golden fofo</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cute%20puppy.jpg" alt="Filhote muito fofo deitado" />
+              <figcaption>Soneca do filhote</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cute%20Black%20Puppy.jpg" alt="Filhote preto encarando a câmera" />
+              <figcaption>Olhar curioso</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cute%20street%20puppy.jpg" alt="Filhote posando para foto" />
+              <figcaption>Pose de modelo</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cute-puppy-dog-13626627873wL.jpg" alt="Filhote de cachorro no gramado" />
+              <figcaption>Gramado e brincadeira</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="https://commons.wikimedia.org/wiki/Special:FilePath/English%20Golden%20Retriever%20puppy.JPG" alt="Filhote de Golden Retriever inglês" />
+              <figcaption>Golden inglês</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+
+      <div class="center">
+        <button class="cta ghost" id="btn-mais-fotos" aria-expanded="false" aria-controls="mais-fotos">Ver mais fotos</button>
+      </div>
+    </section>
+
+    <section id="contato" class="contato" aria-label="Entre em contato">
+      <h2>Entre em contato</h2>
+      <form class="form" name="contato" method="post" data-netlify="true">
+        <div class="campo">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" required />
+        </div>
+        <div class="campo">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+        </div>
+        <button class="cta" type="submit">Enviar mensagem</button>
+      </form>
+      <div class="redes">
+        <p>Nossas redes sociais:</p>
+        <ul class="links" role="list">
+          <li><a href="https://www.tiktok.com/@le__stars?_t=ZM-8zujhUhJx2u&_r=1" target="_blank" rel="noopener" aria-label="TikTok da página">TikTok</a></li>
+          <li><a href="https://www.instagram.com/le__stars?igsh=dGc3OTE1M2pqNnpk" target="_blank" rel="noopener" aria-label="Instagram da página">Instagram</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape" role="contentinfo">
+    <p>Desenvolvido por Você. Projeto didático e sem fins comerciais.</p>
+    <p>Feito pela aluna <strong>Leticia Francine Moraes</strong>, do <strong>3º ano 1</strong>, da escola <strong>E.E. Prof. Antônio Perches Lordello</strong>.</p>
+    <p>Imagens via Wikimedia Commons (links e licenças nas páginas de arquivos).</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
